@@ -1,0 +1,28 @@
+import numpy as np
+
+# Given vectors
+feature = np.array([30.0, 50.0, 10.0])
+weights = np.array([0.05, 0.8, -0.1])
+
+# Vector addition
+addition = feature + weights
+print("Addition:", addition)
+
+# Scalar multiplication (مثلاً ضرب feature في 2)
+scaled = 2 * feature
+print("Scaled feature:", scaled)
+
+# Dot product (مهم جداً في ML)
+dot_product = np.dot(feature, weights)
+print("Dot product:", dot_product)
+
+# Norms (L2 norm)
+feature_norm = np.linalg.norm(feature)
+weights_norm = np.linalg.norm(weights)
+
+print("Feature norm:", feature_norm)
+print("Weights norm:", weights_norm)
+
+# Shapes
+print("feature shape:", feature.shape)
+print("weights shape:", weights.shape)
