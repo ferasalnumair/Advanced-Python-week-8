@@ -1,0 +1,13 @@
+import numpy as np
+
+# Given vectors
+a = np.array([1.0, 2.0, 3.0])
+b = np.array([0.5, 1.0, 1.5])
+
+# Dot product
+dot = np.dot(a, b)
+print("Dot product:", dot)
+
+# Cosine similarity
+cos_sim = dot / (np.linalg.norm(a) * np.linalg.norm(b))
+print("Cosine similarity:", cos_sim)
